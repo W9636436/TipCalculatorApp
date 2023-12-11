@@ -1,4 +1,4 @@
-package com.example.tipcalculatorapp
+package com.example.tipcalculator
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,16 +10,19 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.tipcalculatorapp.ui.theme.TipCalculatorAppTheme
+import com.example.tipcalculator.ui.theme.TipCalculatorTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            TipCalculatorAppTheme {
+            TipCalculatorTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    App()
                 }
             }
         }
@@ -29,15 +32,15 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-            text = "Hello $name!",
-            modifier = modifier
+        text = "Hello $name!",
+        modifier = modifier
     )
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    TipCalculatorAppTheme {
+    TipCalculatorTheme {
         Greeting("Android")
     }
 }

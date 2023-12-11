@@ -12,5 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Tip Calculator App"
-include ':app'
+
+rootProject.name = "Tip calculator"
+include(":app")
+ 

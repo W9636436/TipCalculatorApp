@@ -42,5 +42,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun GreetingPreview() {
     TipCalculatorTheme {
         Greeting("Android")
+        //method
     }
 }

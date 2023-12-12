@@ -89,7 +89,7 @@ fun LoginScreen(navController: NavHostController) {
         navController.navigate(DestinationScreen.HomeScreenDest.route)
     } else {
 
-
+    // column
         Column(
             modifier = Modifier
                 .fillMaxSize()

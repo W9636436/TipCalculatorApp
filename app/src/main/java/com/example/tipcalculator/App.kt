@@ -18,7 +18,7 @@ fun App() {
         composable(route = DestinationScreen.SplashScreenDest.route) {
             SplashScreen(navController = navController)
         }
-
+    // Login screen
         composable(route = DestinationScreen.LoginScreenDest.route) {
 
             LoginScreen(navController = navController)
